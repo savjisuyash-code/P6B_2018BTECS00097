@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Portal ISRO</title>
+  </head>
+
+  <body>
+    <header>
+      <h1 style="text-align: center;"><strong>Student Registraion form(ISRO Entrance 2021)</strong></h1>
+      <h4>Fill personal info:</h4>
+    </header>
+    <section>
+      <form id="form1" action="congrats.html" method="post">
+        <fieldset>
+          <legend style="text-align: center;">Student Information</legend>
+          <ol>
+            <li>
+              <label for="fname" form="form1">First Name</label>
+              <input type="text" name="fname" placeholder="Sachin" required>
+              <label for="mname" form="form1">Middle Name</label>
+              <input type="text" name="mname" placeholder="Ramesh" required>
+              <label for="lname" form="form1">Last Name</label>
+              <input type="text" name="lname" placeholder="Tendulkar" required>
+              <br><br>
+            </li>
+
+            <li>
+              <label for="pname" form="form1">Parent's/Guardian's Name</label><br><br>
+              <input type="text" name="pname" placeholder="Ramesh Tendulkar" required>
+              <br><br>
+            </li>
+
+            <li>
+              <label for="number" form="form1">Mobile Number</label><br><br>
+              <input type="number" name="number" placeholder="Your Mobile number" required>
+              <br><br>
+            </li>
+
+            <li>
+              <label for="email" form="form1">Email</label><br><br>
+              <input type="email" name="email" placeholder="sachin@gmail.com" required><br>
+              <br>
+            </li>
+
+            <li>
+              <label for="idproof" form="form1"> ID Proof in pdf format</label><br><br>
+              <select name="idproof">
+                <option value="Aadhar card" selected>Aadhar Card</option>
+                <option value="Pan card">Pan Card</option>
+                <option value="Passport">Passport</option>
+                <option value="Driving Lisence">Driving Lisence</option>
+              </select><br><br>
+              <input type="file" name="idproof" accept=".pdf" required>
+              <br><br>
+            </li>
+
+            <li>
+              <label for="address" form="form1">Address</label><br><br>
+              <textarea name="address" rows="10" cols="100" maxlength="250" placeholder="Current Address" required></textarea><br><br>
+            </li>
+
+          </ol>
+          </fieldset>
+        <br><br>
+
+        <fieldset>
+          <legend style="text-align: center;">Academic Background</legend>
+          <ol>
+            <li>
+              <label for="quali" form="form1">Qualification</label><br><br>
+              <select name="quali" size="1">
+                <option value="BE">B.E</option>
+                <option value="BSC">B.SC</option>
+                <option value="BTECH" selected>B.Tech</option>
+                <option value="MSC">M.SC</option>
+                <option value="MTECH">M.Tech</option>
+                <option value="Phd">Phd</option>
+              </select><br><br>
+            </li>
+
+            <li>
+              <label for="branch" form="form1">Branch</label><br><br>
+              <select name="branch" size="1">
+                <option value="CSE">Computer Science and Engineering</option>
+                <option value="AERO" selected>Aerospace Engineering</option>
+                <option value="EE">Electrical Engineering</option>
+                <option value="EE">Electronics and Communication Engineering</option>
+                <option value="ME">Mechanical Engineering</option>
+              </select><br><br>
+            </li>
+            <li>
+              <label for="college" form="form1">College Name</label><br><br>
+              <input list="coll" name="collge" required>
+              <datalist id="coll">
+                <option value="Walchand COE, Sangli"></option>
+                <option value="IIT, Kharagpur"></option>
+                <option value="IIT, Pawai"></option>
+                <option value="NIT, Nagpur"></option>
+                <option value="NIT, Suratkal"></option>
+                <option value="Government College of Engineering, Aurangabad"></option>
+                <option value="Government College of Engineering, Nagpur"></option>
+                <option value="BITS, Pilani"></option>
+                <option value="BITS, Hyderabaad"></option>
+                <option value="PICT, Pune"></option>
+                <option value="Ramdeobaba COE, Nagpur"></option>
+                <option value="YCCE, Nagpur"></option>
+
+              </datalist><br><br>
+            </li>
+            <li>
+              <label for="college" form="form1">College Name</label><br><br>
+              <input list="univ" name="university" required>
+              <datalist id="univ">
+                <option value="BITS, Pilani"></option>
+                <option value="BITS, Hyderabaad"></option>
+                <option value="IIT, Pawai"></option>
+                <option value="IIT, Kharagpur"></option>
+                <option value="Savitribai Phule Pune University"></option>
+                <option value="Shivaji University"></option>
+                <option value="RTMNU, Nagpur"></option>
+                <option value="NIT, Nagpur"></option>
+                <option value="NIT, Suratkal"></option>
+              </datalist><br> <br>
+            </li>
+            <li>
+              <label for="seat" form="form1">Exam Seat Number</label><br><br>
+              <input type="text" name="seat" placeholder="Seat Number" required>
+            </li>
+          </ol>
+        </fieldset><br><br>
+        <fieldset>
+          <legend style="text-align: center;">Exam preferences</legend>
+          <ol>
+            <li>
+              <label for="paperbranch" form="form1">Select the Paper Branch</label>
+              <select name="paperbranch" size="1">
+                <option value="CSE">Computer Science and Engineering</option>
+                <option value="AERO" selected>Aerospace Engineering</option>
+                <option value="EE">Electrical Engineering</option>
+                <option value="EE">Electronics and Communication Engineering</option>
+                <option value="ME">Mechanical Engineering</option>
+              </select><br><br>
+            </li>
+            <li>
+              <label for="city" form="form1">City Preferences</label>
+              <select name="city">
+                <optgroup label="Maharashtra">
+                  <option value="Amt">Mumbai</option>
+                  <option value="Jal">Sangli</option>
+                  <option value="Ngp">Nagpur</option>
+                  <option value="Mum">Pune</option>
+                  <option value="Pun">Jalgaon</option>
+                </optgroup>
+                <optgroup label="Karnataka">
+                  <option value="Ban">Bangaluru</option>
+                  <option value="Bel">Belgaun</option>
+                  <option value="Bid">Bidar</option>
+                  <option value="Hub">Hubli</option>
+                  <option value="Man">Mangalore</option>
+                  <option value="Mys">Suratkal</option>
+                </optgroup>
+                <optgroup label="Gujrat">
+                  <option value="Ahem">Ahmedabad</option>
+                  <option value="Gan">GandhiNagar</option>
+                  <option value="Jam">Jamnagar</option>
+                  <option value="Raj">Rajkot</option>
+                  <option value="Sur">Surat</option>
+                  <option value="Vad">Vadodara</option>
+                </optgroup>
+              </select>
+            </li>
+          </ol>
+        </fieldset><br><br>
+        <button type="submit" name="submit">Submit</button>
+      </form>
+    </section>
+    <br><br>
+    <footer>
+      For More information contact <a href="https://www.isro.gov.in/">here</a>.
+    </footer>
+  </body>
+</html>
